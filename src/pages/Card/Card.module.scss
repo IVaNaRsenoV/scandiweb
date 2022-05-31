@@ -1,0 +1,16 @@
+@mixin display() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider__container {
+    display: flex;
+}
+
+.card {
+    @include display();
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 24px;
+}

@@ -1,0 +1,31 @@
+.size {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 16px;
+    h1 {
+        margin-top: 20px;
+        margin-bottom: 7px;
+        color: #1D1F22;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    button {
+        width: 65px;
+        height: 45px;
+        color: #1D1F22;
+        transition: all 0.2s ease;
+        font-size: 16px;
+        line-height: 18px;
+        background-color: #FFFF;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+    button:last-child {
+        margin-right: 0px;
+    }
+    button:hover {
+        background: #1D1F22;
+        color: #FFFF;
+    }
+}

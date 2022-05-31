@@ -26,3 +26,52 @@ export const data = [
     image: img5,
   },
 ];
+
+export const size = [
+  {
+    id: 1,
+    size: "XS",
+  },
+  {
+    id: 2,
+    size: "S",
+  },
+  {
+    id: 3,
+    size: "M",
+  },
+  {
+    id: 4,
+    size: "L",
+  },
+];
+
+export const color = [
+  {
+    id: 1,
+    color: "gray",
+  },
+  {
+    id: 2,
+    color: "black",
+  },
+  {
+    id: 3,
+    color: "green",
+  },
+];
+
+export const text = [
+  {
+    id: 1,
+    stateManager: "Apollo",
+    glasses: "Running Short",
+    price: "$50.00",
+  },
+  {
+    id: 2,
+    stateManager: "Jupiter",
+    glasses: "Wayfarer",
+    price: "$75.00",
+  },
+];

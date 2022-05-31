@@ -1,0 +1,50 @@
+.color {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+
+    h1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    padding-bottom: 8px;
+    }
+
+    button {
+        width: 32px;
+        height: 32px;
+        border: none;
+        margin-right: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    button:last-child {
+        margin-right: 0px;
+    }
+
+    .gray {
+        background: #D3D2D5;
+    }
+
+    .gray:hover {
+        background: #bcbac4;
+    }
+
+    .black {
+        background: #2B2B2B;
+    }
+
+    .black:hover {
+        background: #050505;
+    }
+
+    .green {
+        background: #0F6450;
+    }
+
+    .green:hover {
+        background: #024d3c;
+    }
+}

@@ -1,7 +1,8 @@
-import { SliderContainer } from "./pages";
+import { Card } from "./pages";
+import "./App.css";
 
 function App() {
-  return <SliderContainer />;
+  return <Card />;
 }
 
 export default App;
