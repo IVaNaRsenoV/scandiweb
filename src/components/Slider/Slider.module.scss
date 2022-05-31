@@ -1,0 +1,34 @@
+@mixin button () {
+    width: 24px;
+            height: 24px;
+            border: none;
+            background-color: #000000BA;
+            color: #FFFFFF;
+            margin-left: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+}
+
+.slider {
+    position: relative;
+    width: 200px;
+    img {
+        width: 200px;
+        height: 288px;
+    }
+    .arrows {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        z-index: 1;
+
+        button {
+            @include button();
+        }
+
+        button:hover {
+            background-color: black;
+        }
+
+    }
+}

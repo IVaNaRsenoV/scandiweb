@@ -1,0 +1,36 @@
+@mixin font () {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    color: #1D1F22;
+}
+
+@mixin position ($display, $dir, $justify, $align) {
+    display: $display;
+    flex-direction: $dir;
+    justify-content: $justify;
+}
+
+.counter__container {
+    @include font();
+    @include position(flex, column, space-between, _);
+    padding-right: 24px;
+    span {
+        text-align: center;
+    }
+    button {
+        @include position (flex, row, center, center);
+        @include font();
+        width: 45px;
+        height: 45px;
+        border: 1px solid #1D1F22;
+        color: #1D1F22;
+        background-color: white;
+        cursor: pointer;
+    }
+    button:last-child {
+        margin-bottom: 4px;
+    }
+}
