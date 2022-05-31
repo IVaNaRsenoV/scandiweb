@@ -1,7 +1,6 @@
-import { color } from "../../assets/data/data";
 import styles from "./Color.module.scss";
 
-export const Color = () => {
+export const Color = ({ color }) => {
   return (
     <div className={styles.color}>
       <h1>COLOR:</h1>

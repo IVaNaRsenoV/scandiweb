@@ -3,6 +3,7 @@ import img2 from "../img/B.png";
 import img3 from "../img/C.png";
 import img4 from "../img/D.png";
 import img5 from "../img/E.png";
+import { v4 } from "uuid";
 
 export const data = [
   {
@@ -28,37 +29,73 @@ export const data = [
 ];
 
 export const size = [
-  {
-    id: 1,
-    size: "XS",
-  },
-  {
-    id: 2,
-    size: "S",
-  },
-  {
-    id: 3,
-    size: "M",
-  },
-  {
-    id: 4,
-    size: "L",
-  },
+  [
+    {
+      id: v4(),
+      size: "XS",
+    },
+    {
+      id: v4(),
+      size: "S",
+    },
+    {
+      id: v4(),
+      size: "M",
+    },
+    {
+      id: v4(),
+      size: "L",
+    },
+  ],
+  [
+    {
+      id: v4(),
+      size: "XS",
+    },
+    {
+      id: v4(),
+      size: "S",
+    },
+    {
+      id: v4(),
+      size: "M",
+    },
+    {
+      id: v4(),
+      size: "L",
+    },
+  ],
 ];
 
 export const color = [
-  {
-    id: 1,
-    color: "gray",
-  },
-  {
-    id: 2,
-    color: "black",
-  },
-  {
-    id: 3,
-    color: "green",
-  },
+  [
+    {
+      id: 1,
+      color: "gray",
+    },
+    {
+      id: 2,
+      color: "black",
+    },
+    {
+      id: 3,
+      color: "green",
+    },
+  ],
+  [
+    {
+      id: 1,
+      color: "black",
+    },
+    {
+      id: 2,
+      color: "blue",
+    },
+    {
+      id: 3,
+      color: "orange",
+    },
+  ],
 ];
 
 export const text = [

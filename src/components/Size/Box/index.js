@@ -1,4 +1,3 @@
-import { size } from "../../../assets/data/data";
 import styles from "./Box.module.scss";
 
 const Test = ({ size, id }) => {
@@ -9,7 +8,7 @@ const Test = ({ size, id }) => {
   );
 };
 
-const Label = ({ id, size }) => {
+const Label = ({ size, id }) => {
   return (
     <label key={id + 1} for={id} className={styles.label}>
       <input type="checkbox" id={id} className={styles.checkbox} />
@@ -18,7 +17,7 @@ const Label = ({ id, size }) => {
   );
 };
 
-export const Box = () => {
+export const Box = ({ size }) => {
   return (
     <div className={styles.box__container}>
       {size.map(({ id, size }) => (

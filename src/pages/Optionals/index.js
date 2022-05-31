@@ -1,12 +1,12 @@
 import { Color, Size, Text } from "../../components";
 import styles from "./Optionals.module.scss";
 
-export const Optionals = () => {
+export const Optionals = ({ text, color, size }) => {
   return (
     <div>
-      <Text />
-      <Size />
-      <Color />
+      <Text text={text} />
+      <Size size={size} />
+      <Color color={color} />
     </div>
   );
 };
