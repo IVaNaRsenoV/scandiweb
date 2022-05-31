@@ -1,0 +1,26 @@
+@mixin font () {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+@mixin h1 () {
+    margin-top: 20px;
+    margin-bottom: 7px;
+    color: #1D1F22;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.size {
+    @include font();
+    padding-bottom: 16px;
+
+    h1 {
+        @include h1();
+    }
+
+    .size__text {
+        z-index: 1;
+    }
+}
