@@ -1,5 +1,5 @@
 import { Component } from "react";
-import Basket from "../../../../../assets/svg/basket";
+import Basket from "../../../../assets/svg/basket";
 
 class Right extends Component {
   render() {

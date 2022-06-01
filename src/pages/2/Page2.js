@@ -1,6 +1,6 @@
-import { Card } from "../";
-import Cart from "../../components/Cart";
-import BtnContainer from "../../components/BtnContainer";
+import { Card } from "../../components/Page2/Card";
+import Cart from "../../components/Page2/Cart";
+import BtnContainer from "../../components/Page2/BtnContainer";
 import { text, color, size } from "../../assets/data/data";
 
 const Page2 = () => {

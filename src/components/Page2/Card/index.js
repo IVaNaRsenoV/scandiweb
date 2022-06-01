@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Optionals, SliderContainer } from "../";
+import { Optionals } from "../Optionals";
+import { SliderContainer } from "../SliderContainer";
 import styles from "./Card.module.scss";
 
 export class Card extends Component {

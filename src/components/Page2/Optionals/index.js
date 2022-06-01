@@ -1,5 +1,7 @@
 import { Component } from "react";
-import { Color, Size, Text } from "../../components";
+import { Color } from "../Color";
+import { Size } from "../Size";
+import { Text } from "../Text";
 import styles from "./Optionals.module.scss";
 
 export class Optionals extends Component {

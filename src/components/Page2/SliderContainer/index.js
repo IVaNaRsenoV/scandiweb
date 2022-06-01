@@ -1,7 +1,7 @@
 import { Component } from "react";
-import Counter from "../../components/Counter";
-import Slider from "../../components/Slider";
-import { data } from "../../assets/data/data";
+import Counter from "../Counter";
+import Slider from "../Slider";
+import { data } from "../../../assets/data/data";
 import styles from "./Slider.module.scss";
 
 export class SliderContainer extends Component {
