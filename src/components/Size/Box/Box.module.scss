@@ -8,6 +8,10 @@
     display: flex;
 }
 
+.box__container__position {
+    margin-right: 8px;
+}
+
 .label {
     margin-right: 8px;
 }
@@ -37,7 +41,6 @@
     background-color: #FFFF;
     border: 1px solid #1D1F22;
     transition: all 0.2s ease;
-    margin-right: 8px;
     cursor: pointer;
 }
 

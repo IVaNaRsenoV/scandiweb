@@ -1,18 +1,27 @@
-import { INC, DEC } from "../Actions";
+import { combineReducers } from "redux";
+import { data } from "../../assets/data/data";
 
 const initialState = {
-  counter: 0,
+  slides: data,
 };
 
-const reducer = (state = initialState, { type, payload }) => {
+const counterReducer = (state = initialState, { type, payload }) => {
   switch (type) {
-    case INC:
-      return { ...state, counter: payload + 1 };
-    case DEC:
-      return { ...state, counter: payload - 1 };
     default:
       return state;
   }
 };
 
-export default reducer;
+const sliderReducer = (state = initialState, { type, payload }) => {
+  switch (type) {
+    default:
+      return state;
+  }
+};
+
+const root = combineReducers({
+  counter: counterReducer,
+  slider: sliderReducer,
+});
+
+export default root;

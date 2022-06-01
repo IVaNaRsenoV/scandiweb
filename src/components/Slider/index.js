@@ -1,32 +1,56 @@
-import React, { useState } from "react";
-import { data } from "../../assets/data/data";
+import React, { Component } from "react";
+import { connect } from "react-redux";
 import styles from "./Slider.module.scss";
 
-export const Slider = ({ slides }) => {
-  const [current, setCurrent] = useState(0);
-  const length = slides.length;
+class Slider extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      current: 0,
+    };
+  }
 
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+  nextSlide = () => {
+    this.setState({
+      current:
+        this.state.current === this.props.length ? 0 : this.state.current + 1,
+    });
   };
 
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+  prevSlide = () => {
+    this.setState({
+      current:
+        this.state.current === 0 ? this.props.length : this.state.current - 1,
+    });
   };
 
-  if (!Array.isArray(slides) || length <= 0) return null;
+  render() {
+    console.log(this.props);
+    const { slider } = this.props;
 
-  return (
-    <section className={styles.slider}>
-      {data.map(({ id, image }, index) => (
-        <div key={id + 1} className={styles.img__container}>
-          {current === index && <img src={image} key={id} />}
+    if (!Array.isArray(slider) || this.props.length <= 0) return null;
+
+    return (
+      <section className={styles.slider}>
+        {slider.map(({ id, image }, index) => (
+          <div key={id + 1} className={styles.img__container}>
+            {this.state.current === index && <img src={image} key={id} />}
+          </div>
+        ))}
+        <div className={styles.arrows}>
+          <button onClick={this.prevSlide}>&#706;</button>
+          <button onClick={this.nextSlide}>&#62;</button>
         </div>
-      ))}
-      <div className={styles.arrows}>
-        <button onClick={prevSlide}>&#706;</button>
-        <button onClick={nextSlide}>&#62;</button>
-      </div>
-    </section>
-  );
+      </section>
+    );
+  }
+}
+
+const mapStateToProps = (state) => {
+  return {
+    slider: state.slider.slides,
+    length: state.slider.slides.length - 1,
+  };
 };
+
+export default connect(mapStateToProps)(Slider);

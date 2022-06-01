@@ -1,26 +1,36 @@
-import React from "react";
-import { connect } from "react-redux";
-import { increment, decrement } from "../../redux/actionCreators";
+import React, { Component } from "react";
 import styles from "./Counter.module.scss";
 
-const Counter = ({ counter, inc, dec }) => {
-  const count = (func) => {
-    return () => func(counter);
+class Counter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      counter: 0,
+    };
+  }
+
+  inc = () => {
+    this.setState({
+      counter: this.state.counter + 1,
+    });
   };
 
-  return (
-    <div className={styles.counter__container}>
-      <button onClick={count(inc)}>+</button>
-      <span>{counter}</span>
-      <button onClick={count(dec)}>-</button>
-    </div>
-  );
-};
+  dec = () => {
+    this.setState({
+      counter: this.state.counter - 1,
+    });
+  };
 
-const mapStateToProps = (state) => ({ counter: state.counter });
-const mapDispatchToProps = (dispatch) => ({
-  inc: (data) => dispatch(increment(data)),
-  dec: (data) => dispatch(decrement(data)),
-});
+  render() {
+    const { inc, dec } = this.props;
+    return (
+      <div className={styles.counter__container}>
+        <button onClick={this.inc}>+</button>
+        <span>{this.state.counter}</span>
+        <button onClick={this.dec}>-</button>
+      </div>
+    );
+  }
+}
 
-export default connect(mapStateToProps, mapDispatchToProps)(Counter);
+export default Counter;

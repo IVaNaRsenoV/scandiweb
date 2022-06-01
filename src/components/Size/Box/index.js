@@ -1,4 +1,5 @@
 import styles from "./Box.module.scss";
+import classnames from "classnames";
 
 const Test = ({ size, id }) => {
   return (
@@ -11,7 +12,11 @@ const Test = ({ size, id }) => {
 const Label = ({ size, id }) => {
   return (
     <label key={id + 1} for={id} className={styles.label}>
-      <input type="checkbox" id={id} className={styles.checkbox} />
+      <input
+        type="checkbox"
+        id={id}
+        className={classnames([styles.checkbox])}
+      />
       <Test size={size} id={id} />
     </label>
   );
@@ -21,7 +26,12 @@ export const Box = ({ size }) => {
   return (
     <div className={styles.box__container}>
       {size.map(({ id, size }) => (
-        <div className={styles.box__container}>
+        <div
+          className={classnames([
+            styles.box__container,
+            styles.box__container__position,
+          ])}
+        >
           <Label id={id} size={size} />
         </div>
       ))}
