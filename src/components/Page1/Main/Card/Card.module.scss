@@ -1,0 +1,15 @@
+.card {
+  padding-bottom: 120px;
+
+  p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28.8px;
+    color: #1D1F22;
+  }
+
+  p:last-child {
+    font-weight: bold;
+  }
+}

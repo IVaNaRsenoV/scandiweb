@@ -26,6 +26,10 @@ export const data = [
     id: 5,
     image: img5,
   },
+  {
+    id: 6,
+    image: img3,
+  },
 ];
 
 export const size = [

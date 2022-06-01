@@ -1,0 +1,26 @@
+.header__container {
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    ul {
+        display: flex;
+    }
+
+    li {
+        font-family: 'Raleway', sans-serif;
+        list-style: none;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 160%;
+        color: #1D1F22;
+        cursor: pointer;
+        padding-right: 32px;
+    }
+
+    li:last-child {
+        padding-right: 0px;
+    }
+  }

@@ -1,19 +1,14 @@
 import { Component } from "react";
-import { Card } from "./pages";
-import Cart from "./components/Cart";
-import BtnContainer from "./components/BtnContainer";
-import { text, color, size } from "./assets/data/data";
+import Page1 from "./pages/1/Page1";
+import Page2 from "./pages/2/Page2";
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Cart />
-        {text.map((el, index) => {
-          return <Card text={el} color={color[index]} size={size[index]} />;
-        })}
-        <BtnContainer />
+        <Page1 />
+        <Page2 />
       </div>
     );
   }
