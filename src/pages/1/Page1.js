@@ -4,7 +4,7 @@ import Main from "../../components/Page1/Main";
 function Page1() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Main />
     </div>
   );
