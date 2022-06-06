@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Button from "./Button";
 import styles from "./BtnContainer.module.scss";
 
 const data = [
@@ -24,13 +25,13 @@ class BtnContainer extends Component {
     return (
       <div className={styles.button__container}>
         <div className={styles.button__card}>
-          {data.map(({ id, leftText, rightText }) => (
-            <div className={styles.card}>
+          {data.map(({ id, leftText, rightText }, index) => (
+            <div className={styles.card} key={index}>
               <span key={id}>{leftText}:</span>
               <h3 key={id + 1}>{rightText}</h3>
             </div>
           ))}
-          <button>ORDER</button>
+          <Button text={"ORDER"} />
         </div>
       </div>
     );

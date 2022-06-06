@@ -12,4 +12,18 @@
   p:last-child {
     font-weight: bold;
   }
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.popup__window {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(208, 200, 200);
+  opacity: 0.5;
 }

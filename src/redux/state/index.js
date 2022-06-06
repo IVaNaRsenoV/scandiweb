@@ -1,6 +1,6 @@
-import { createStore } from "redux";
-import reducer from "../reducer";
+import { data } from "../../assets/data/data";
 
-const store = createStore(reducer);
-
-export default store;
+export const initialState = {
+  slides: data,
+  src: "default",
+};

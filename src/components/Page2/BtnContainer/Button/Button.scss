@@ -1,0 +1,22 @@
+button {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 44px;
+    background: #5ECE7B;
+    border: none;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #FFF;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #265c34;
+}

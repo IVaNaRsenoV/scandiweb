@@ -27,12 +27,13 @@ export const Box = ({ size }) => {
     <div className={styles.box__container}>
       {size.map(({ id, size }) => (
         <div
+          key={id}
           className={classnames([
             styles.box__container,
             styles.box__container__position,
           ])}
         >
-          <Label id={id} size={size} />
+          <Label key={id + 1} id={id} size={size} />
         </div>
       ))}
     </div>

@@ -25,7 +25,7 @@ class Slider extends Component {
   };
 
   render() {
-    console.log(this.props);
+    // console.log(this.props);
     const { slider } = this.props;
 
     if (!Array.isArray(slider) || this.props.length <= 0) return null;
@@ -48,8 +48,8 @@ class Slider extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    slider: state.slider.slides,
-    length: state.slider.slides.length - 1,
+    slider: state.slides,
+    length: state.slides.length - 1,
   };
 };
 

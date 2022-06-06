@@ -8,7 +8,9 @@ const Page2 = () => {
     <div>
       <Cart />
       {text.map((el, index) => {
-        return <Card text={el} color={color[index]} size={size[index]} />;
+        return (
+          <Card text={el} color={color[index]} size={size[index]} key={index} />
+        );
       })}
       <BtnContainer />
     </div>
