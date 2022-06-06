@@ -1,0 +1,29 @@
+.page3__container {
+    padding-top: 112px;
+    padding-bottom: 120px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 520px;
+        height: 420px;
+    }
+    .left {
+        padding-right: 100px;
+    }
+    .right {
+        margin-right: 200px;
+    }
+    .text__block {
+        padding-top: 40px;
+        width: 285px;
+        p {
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0em;
+        }
+    }
+}
